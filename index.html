@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+      :root {
+        --cell-size: 100px;
+        background: rgba(226, 225, 254, 0.65);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        border-radius: 10px;
+        --mark-size: calc(var(--cell-size) * 0.9);
+      }
+
+      body {
+        margin: 0;
+      }
+      .board {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+      }
+
+      a:link {
+        text-decoration: none;
+      }
+
+      .button {
+        width: 20vw;
+        height: 20vh;
+        margin: 5px;
+        background: rgba( 133, 129, 255, 0.65 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+      }
+      .button:hover {
+        background-color: rgba(179, 176, 246, 0.65);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="board" id="board">
+      <button class="button button1">
+        <a href="index1.html">Calculator</a>
+      </button>
+      <button class="button button2">
+        <a href="index2.html">Tic Tac Toe Game</a>
+      </button>
+    </div>
+  </body>
+</html>
